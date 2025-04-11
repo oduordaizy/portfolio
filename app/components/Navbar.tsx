@@ -6,9 +6,9 @@ const Navbar = () => {
     <nav>
       <div className='px-4 py-3 flex justify-between'>
       <div className='font-bold text-4xl '>
-        <Link href='/'>Daisy</Link>
+        <Link href='/' className='pacifico-regular text-[#005792]'>Daisy</Link>
       </div>
-      <div className='space-x-6'>
+      <div className='space-x-6 text-[#3a4042]'>
         <Link href='/'>Home</Link>
         <Link href='/about'>About</Link>
         <Link href='/projects'>Projects</Link>
