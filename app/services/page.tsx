@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { FaCode } from "react-icons/fa";
+import { FaCode, FaLaptop, FaLaptopCode } from "react-icons/fa";
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { GrDeploy } from "react-icons/gr";
 import { BsGraphUpArrow } from "react-icons/bs";
+import { SiOpensearch } from "react-icons/si";
 
 
 const page = () => {
@@ -13,9 +14,9 @@ const page = () => {
       <h1 className='font-bold text-4xl text-center '>What I can do for you</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 text-center'>
         <div className='bg-white rounded-md p-3 '>
-            <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><FaCode /></div>
+            <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><FaLaptopCode /></div>
             <h1 className='font-bold'>Website Development</h1>
-            <p>Lorem Ipsum</p>
+            <p>I design and develop modern, responsive websites that help brands grow and stand out online.</p>
         </div>
         <div className='bg-white rounded-md p-3 '>
             <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><SiGooglemarketingplatform /></div>
@@ -23,10 +24,12 @@ const page = () => {
             <p>Lorem Ipsum</p>
         </div>
         <div className='bg-white rounded-md p-3 '>
+          <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><SiOpensearch /></div>
           <h1 className='font-bold'>Search Engine Optimization</h1>
           <p>Lorem Ipsum</p>
         </div>
         <div className='bg-white rounded-md p-3 '>
+          <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><FaLaptop /></div>
           <h1 className='font-bold'>Website Maintenance</h1>
           <p>Lorem Ipsum</p>
         </div>

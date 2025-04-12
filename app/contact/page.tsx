@@ -5,7 +5,8 @@ const page = () => {
   return (
     <div>
       <Navbar/>
-      Contact me through: 
+      <h1 className='text-3xl font-semibold mt-12 text-center'>Let's Connect</h1>
+      <p className='mt-4 text-gray-700 p-3'>Have a project in mind or just want to say hi? I’d love to hear from you.</p>
       
       </div>
   )

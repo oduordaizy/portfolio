@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav>
       <div className='px-4 py-3 flex justify-between'>
       <div className='font-bold text-4xl '>
-        <Link href='/' className='pacifico-regular text-[#005792]'>Daisy</Link>
+        <Link href='/' className='pacifico-regular text-[#fd5f00]'>Daisy</Link>
       </div>
       <div className='space-x-6 text-[#3a4042]'>
         <Link href='/'>Home</Link>
@@ -14,6 +14,7 @@ const Navbar = () => {
         <Link href='/projects'>Projects</Link>
         <Link href='/services'>Services</Link>
         <Link href='/contact'>Contact</Link>
+        <Link href='/skills'>Skills</Link>
       </div>
       </div>
     </nav>
