@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import { FaCode, FaLaptop, FaLaptopCode } from "react-icons/fa";
+import { FaLaptop, FaLaptopCode } from "react-icons/fa";
 import { SiGooglemarketingplatform } from "react-icons/si";
 import { GrDeploy } from "react-icons/gr";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { SiOpensearch } from "react-icons/si";
+import Footer from '../components/footer';
 
 
 const page = () => {
@@ -21,29 +22,31 @@ const page = () => {
         <div className='bg-white rounded-md p-3 '>
             <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><SiGooglemarketingplatform /></div>
             <h1 className='font-bold'>Digital Marketing</h1>
-            <p>Lorem Ipsum</p>
+            <p>I create marketing strategies that increase your reach, drive traffic, and convert visitors into loyal customers.</p>
+
         </div>
         <div className='bg-white rounded-md p-3 '>
           <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><SiOpensearch /></div>
           <h1 className='font-bold'>Search Engine Optimization</h1>
-          <p>Lorem Ipsum</p>
+          <p>Improve your visibility on search engines with tailored SEO practices that help people find your business faster.</p>
         </div>
         <div className='bg-white rounded-md p-3 '>
           <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><FaLaptop /></div>
           <h1 className='font-bold'>Website Maintenance</h1>
-          <p>Lorem Ipsum</p>
+          <p>Keep your site secure and up-to-date with regular maintenance, performance checks, and quick bug fixes.</p>
         </div>
         <div className='bg-white rounded-md p-3 '>
           <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><GrDeploy /></div>
           <h1 className='font-bold'>Cloud Deployments</h1>
-          <p>Lorem Ipsum</p>
+          <p>I help you deploy scalable web applications using AWS and other cloud platforms, ensuring reliability and speed.</p>
         </div>
         <div className='bg-white rounded-md p-3 '>
           <div className='flex justify-center mb-3 text-2xl font-bold text-[#00204a]'><BsGraphUpArrow /></div>
           <h1 className='font-bold'>Building ML Models</h1>
-          <p>Lorem Ipsum</p>
+          <p>I build and fine-tune machine learning models that analyze data, automate decisions, and create intelligent features.</p>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

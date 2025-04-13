@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Image from 'next/image';
+import Footer from "./components/footer";
+
 
 export default function Main() {
   return (
@@ -23,7 +25,7 @@ export default function Main() {
           <Image src="/daisyimg.png" width={600} height={50} alt="Daisy"/>
         </div>
       </div>
-    <footer/>
+   <Footer/>
     </div>
     </div>
   );
