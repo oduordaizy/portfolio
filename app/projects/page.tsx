@@ -22,12 +22,12 @@ const projects = () => {
         </div>
 
         <div>
-          <Image src='/recruit.png'  height={200} width={400} alt='Image of Website 1'/>
-          <h1 className='font-semibold'>Recruit</h1>
-          <p className="text-sm text-blue mt-2 mb-3.5">Built a scalable online store using Next.js, Tailwind CSS, and Stripe integration.</p>
+          <Image src='/demeters.png'  height={200} width={400} alt='Image of Website 1'/>
+          <h1 className='font-semibold'>Demeter's Gardens Website </h1>
+          <p className="text-sm text-blue mt-2 mb-3.5">A responsive and SEO optimized website for brand visibility</p>
           <div className='flex space-x-3'>
-            <a href='https://daisyrec-daisys-projects-7ca04aa0.vercel.app/' className='bg-[#005792] text-white px-4 py-2 rounded-md my-2'>View Live</a>
-            <a href='' className='text-[#005792] border-solid border-1 px-4 py-2 rounded-md my-2'>Github</a>
+            <a href='https://demeters-gardens.vercel.app/' className='bg-[#005792] text-white px-4 py-2 rounded-md my-2'>View Live</a>
+            <a href='https://github.com/oduordaizy/demeters_gardens.git' className='text-[#005792] border-solid border-1 px-4 py-2 rounded-md my-2'>Github</a>
           </div>
         </div>
 
