@@ -23,7 +23,6 @@ const Navbar = () => {
           <Link href="/projects" className="hover:text-[#fd5f00]">Projects</Link>
           <Link href="/services" className="hover:text-[#fd5f00]">Services</Link>
           <Link href="/contact" className="hover:text-[#fd5f00]">Contact</Link>
-          <Link href="/skills" className="hover:text-[#fd5f00]">Skills</Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -40,7 +39,6 @@ const Navbar = () => {
           <Link href="/projects" className="block hover:text-[#fd5f00]">Projects</Link>
           <Link href="/services" className="block hover:text-[#fd5f00]">Services</Link>
           <Link href="/contact" className="block hover:text-[#fd5f00]">Contact</Link>
-          <Link href="/skills" className="block hover:text-[#fd5f00]">Skills</Link>
       </div>
       )}
 
