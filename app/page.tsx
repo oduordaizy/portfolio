@@ -12,7 +12,7 @@ export default function Main() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 py-16 max-w-7xl mx-auto">
+      <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 py-1 max-w-7xl mx-auto">
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-5xl font-bold leading-tight">
             Hello 👋,<br />
@@ -37,7 +37,7 @@ export default function Main() {
             width={550}
             height={550}
             alt="Daisy"
-            className="rounded-xl shadow-lg"
+            className=""
           />
         </div>
       </section>
@@ -48,23 +48,23 @@ export default function Main() {
           <h2 className="text-3xl font-semibold mb-6">What I Can Do For You</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-left">
             <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-              <Code className="text-[#005792] mb-4" size={32} />
-              <h3 className="text-xl font-bold mb-2">Web Development</h3>
-              <p className="text-gray-600">
+            <div className="flex justify-center"><Code className="text-[#005792] mb-4" size={32} /></div>
+              <h3 className="text-xl font-bold mb-2 text-center">Web Development</h3>
+              <p className="text-gray-600 text-center">
                 I build high-performance websites and web apps using modern tech like Next.js, React, and Tailwind.
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-              <Cloud className="text-[#005792] mb-4" size={32} />
-              <h3 className="text-xl font-bold mb-2">Cloud Solutions</h3>
-              <p className="text-gray-600">
+            <div className="flex justify-center "><Cloud className="text-[#005792] mb-4" size={32} /></div>
+              <h3 className="text-xl font-bold mb-2 text-center">Cloud Solutions</h3>
+              <p className="text-gray-600 text-center">
                 I help businesses scale by deploying secure, scalable applications on AWS and integrating cloud-native practices.
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
-              <Sparkles className="text-[#005792] mb-4" size={32} />
-              <h3 className="text-xl font-bold mb-2">UI/UX Focus</h3>
-              <p className="text-gray-600">
+            <div className="flex justify-center"><Sparkles className="text-[#005792] mb-4" size={32} /></div>
+              <h3 className="text-xl font-bold mb-2 text-center">UI/UX Focus</h3>
+              <p className="text-gray-600 text-center">
                 I design user-friendly interfaces that look great and feel even better, balancing beauty and usability.
               </p>
             </div>
