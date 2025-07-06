@@ -1,63 +1,35 @@
-# 🚀 My Portfolio Website
-A modern, fast, and responsive portfolio website built with Next.js, Tailwind CSS, and deployed on Vercel.
+# My Professional Portfolio
 
-<!-- Screenshot -->
+![Portfolio Screenshot](./public/portfolio-screenshot.png) 
 
-## 📌 Features
-✅ Blazing Fast – Powered by Next.js for optimal performance.
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS to showcase my skills, projects, and professional journey.
 
-✅ SEO Optimized – Meta tags, social previews, and best practices.
+## 🌟 Features
 
-✅ Responsive Design – Looks great on all devices.
+- **Modern UI**: Clean, professional design with smooth animations
+- **Fully Responsive**: Works perfectly on all devices
+- **Project Showcase**: Highlight your best work with details
+- **Contact Form**: Integrated with FormSubmit for easy communication
+- **Performance Optimized**: Fast loading with Next.js optimizations
+- **Dark Mode**: (Optional - if implemented)
 
-✅ Dark Mode Ready – Uses Tailwind's dark mode.
+## 🛠 Technologies Used
 
-✅ Easy to Customize – Built with reusable components.
+- **Frontend**: 
+  - Next.js 14 (App Router)
+  - TypeScript
+  - Tailwind CSS
+  - React Icons (Lucide)
+- **Form Handling**: FormSubmit.co
+- **Deployment**: Vercel
 
-✅ Deployed with Vercel – One-click deployment for easy updates.
+## 🚀 Getting Started
 
-## 🛠 Tech Stack
-Frontend: Next.js (App Router)
+### Prerequisites
+- Node.js (v18 or later)
+- npm or yarn
 
-Styling: Tailwind CSS
-
-Deployment: Vercel
-
-
-
-## 📁 Project Structure
-
-/portfolio
- ├── /app             # Next.js App Router pages
- 
- │   ├── /page.tsx    # Home page
- 
- │   ├── /about       # About page
- 
- │   ├── /projects    # Projects page
- 
- │   ├── /contact     # Contact page
- 
- ├── /components      # Reusable UI components
- 
- ├── /public          # Static assets (images, icons)
- 
- ├── tailwind.config.js  # Tailwind CSS configuration
- 
- ├── tsconfig.json        # TypeScript configuration
- 
- ├── package.json        # Dependencies and scripts
-
-
-
-## 🌍 Deployment
-This project is deployed using Vercel.
-
-Link: 
-
-## 📞 Contact
-💼 Portfolio:
-
-📧 Email: oduordaizy@gmail.com
-
-📍 LinkedIn: linkedin.com/in/daisyoduor
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
