@@ -11,7 +11,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 - **Project Showcase**: Highlight your best work with details
 - **Contact Form**: Integrated with FormSubmit for easy communication
 - **Performance Optimized**: Fast loading with Next.js optimizations
-- **Dark Mode**: (Optional - if implemented)
+
 
 ## 🛠 Technologies Used
 
