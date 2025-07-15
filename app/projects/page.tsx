@@ -58,6 +58,40 @@ const Projects = () => {
             </div>
           </div>
 
+           {/* Project 2 */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div className="relative h-48 w-full">
+              <Image 
+                src='/medicare.png' 
+                layout="fill"
+                objectFit="cover"
+                alt='DigitalHub Blog'
+              />
+            </div>
+            <div className="p-6">
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">MediCare</h2>
+              <p className="text-gray-600 mb-4"> A comprehensive telemedicine platform designed to connect patients with healthcare providers. It is built using Next Js on the Front-end and Node js on the backend</p>
+              <div className="flex space-x-3">
+                <a 
+                  href='https://telemed-xi.vercel.app/' 
+                  className="bg-[#005792] hover:bg-[#004274] text-white px-4 py-2 rounded-md transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live
+                </a>
+                <a 
+                  href='#' 
+                  className="text-[#005792] border border-[#005792] hover:bg-blue-50 px-4 py-2 rounded-md transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Project 2 */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="relative h-48 w-full">
