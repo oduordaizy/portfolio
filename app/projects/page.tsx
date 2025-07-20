@@ -47,7 +47,7 @@ const Projects = () => {
                   View Live
                 </a>
                 <a 
-                  href='#' 
+                  href='https://github.com/oduordaizy/recruit.git' 
                   className="text-[#005792] border border-[#005792] hover:bg-blue-50 px-4 py-2 rounded-md transition-colors duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -81,7 +81,7 @@ const Projects = () => {
                   View Live
                 </a>
                 <a 
-                  href='#' 
+                  href='https://telemed-xi.vercel.app/' 
                   className="text-[#005792] border border-[#005792] hover:bg-blue-50 px-4 py-2 rounded-md transition-colors duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
