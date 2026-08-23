@@ -95,7 +95,7 @@ const Footer = () => {
                   href="mailto:contact@daisyoduor.com"
                   className="hover:text-brand-accent transition-colors"
                 >
-                  contact@daisyoduor.com
+                  oduordaizy@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -125,7 +125,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://facebook.com/yourusername"
+                href="https://www.facebook.com/people/Zubenix-Solutions/61588911823882"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook Profile"
@@ -140,9 +140,7 @@ const Footer = () => {
         {/* Bottom Bar: Copyright & Attribution */}
         <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-400 gap-3 sm:gap-4">
           <p>© {currentYear} Daisy Oduor. All rights reserved.</p>
-          <p className="text-gray-400">
-            Designed & built with <span className="text-brand-accent">Next.js</span> & <span className="text-brand-accent">Tailwind CSS</span>.
-          </p>
+          
         </div>
       </div>
     </footer>

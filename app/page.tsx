@@ -26,7 +26,7 @@ export default function Main() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="min-h-[calc(100vh-80px)] flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-12 md:py-0 max-w-7xl mx-auto z-10 relative">
+      <section className="min-h-[calc(100vh-80px)] flex flex-col md:flex-row-reverse items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 py-12 md:py-0 max-w-7xl mx-auto z-10 relative">
         <div className="md:w-1/2 space-y-4 sm:space-y-6 md:space-y-8 animate-fade-in-up w-full">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight">
             Hello <span className="wave inline-block origin-bottom-right">👋</span>,<br />
@@ -45,11 +45,11 @@ export default function Main() {
           </div>
         </div>
 
-        <div className="md:w-1/2 mb-8 sm:mb-12 md:mb-0 flex justify-center items-center animate-fade-in w-full">
+        <div className="md:w-1/2 mt-8 sm:mt-12 md:mt-0 flex justify-center items-center animate-fade-in w-full">
           <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-secondary to-brand-accent rounded-full opacity-20 blur-2xl animate-pulse"></div>
             <Image
-              src="/daisyimg.png"
+              src="/daisy-img.png"
               fill
               priority
               alt="Daisy Oduor"
