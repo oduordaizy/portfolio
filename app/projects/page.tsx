@@ -11,7 +11,7 @@ const projectsData = [
         title: "iTravas",
         description: "A modern ridesharing platform connecting drivers with empty seats to passengers seeking affordable, secure, and convenient travel across Kenya. Features real-time tracking, secure payments, and driver verification.",
         category: "Web Development",
-        imageUrl: "/projects/itravas.jpg",
+        imageUrl: "/projects/itravas.png",
         gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
         tech: ["React", "Django", "PostgreSQL"],
         stats: { views: "8.5K", conversion: "4.1%" },
@@ -226,17 +226,7 @@ export default function Projects() {
                                     ))}
                                 </div>
 
-                                {/* Stats */}
-                                <div className="flex items-center gap-4 text-xs text-brand-muted-light dark:text-brand-muted-dark mb-6">
-                                    <div className="flex items-center gap-1.5">
-                                        <Eye className="w-4 h-4 text-brand-primary dark:text-brand-accent" />
-                                        <span className="font-medium">{project.stats.views} views</span>
-                                    </div>
-                                    <div className="flex items-center gap-1.5">
-                                        <Award className="w-4 h-4 text-brand-primary dark:text-brand-accent" />
-                                        <span className="font-medium">{project.stats.conversion} conversion</span>
-                                    </div>
-                                </div>
+                              
 
                                 <a
                                     href={project.url}
