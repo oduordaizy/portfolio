@@ -81,69 +81,69 @@ export default function Contact() {
       <Navbar />
       <main className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Let&apos;s Connect</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-5xl font-bold text-brand-text-light dark:text-brand-text-dark mb-4">Let&apos;s Connect</h1>
+          <p className="text-xl text-brand-muted-light dark:text-brand-muted-dark max-w-2xl mx-auto">
             Have a project in mind or want to discuss opportunities? Drop me a message below.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Information */}
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl shadow-sm">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h2>
+          <div className="bg-gradient-to-br from-brand-primary/5 to-brand-secondary/10 dark:from-brand-surface-dark dark:to-brand-bg-dark p-8 rounded-2xl shadow-sm border border-brand-border-light dark:border-brand-border-dark">
+            <h2 className="text-2xl font-semibold text-brand-text-light dark:text-brand-text-dark mb-6">Contact Information</h2>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-2 bg-white rounded-lg shadow-xs">
-                  <Mail className="text-indigo-600" size={20} />
+                <div className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark rounded-lg shadow-xs border border-brand-border-light dark:border-brand-border-dark">
+                  <Mail className="text-brand-primary dark:text-brand-accent" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-sm font-medium text-gray-500">Email</h3>
-                  <a href="mailto:oduordaizy@gmail.com" className="text-lg text-gray-800 hover:text-indigo-600 transition-colors">
+                  <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark">Email</h3>
+                  <a href="mailto:oduordaizy@gmail.com" className="text-lg text-brand-text-light dark:text-brand-text-dark hover:text-brand-accent dark:hover:text-brand-accent transition-colors">
                     oduordaizy@gmail.com
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-2 bg-white rounded-lg shadow-xs">
-                  <Phone className="text-indigo-600" size={20} />
+                <div className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark rounded-lg shadow-xs border border-brand-border-light dark:border-brand-border-dark">
+                  <Phone className="text-brand-primary dark:text-brand-accent" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-sm font-medium text-gray-500">Phone</h3>
-                  <span className="text-lg text-gray-800">+254 797967839</span>
+                  <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark">Phone</h3>
+                  <span className="text-lg text-brand-text-light dark:text-brand-text-dark">+254 797967839</span>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-2 bg-white rounded-lg shadow-xs">
-                  <MapPin className="text-indigo-600" size={20} />
+                <div className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark rounded-lg shadow-xs border border-brand-border-light dark:border-brand-border-dark">
+                  <MapPin className="text-brand-primary dark:text-brand-accent" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-sm font-medium text-gray-500">Location</h3>
-                  <span className="text-lg text-gray-800">Nairobi, Kenya</span>
+                  <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark">Location</h3>
+                  <span className="text-lg text-brand-text-light dark:text-brand-text-dark">Nairobi, Kenya</span>
                 </div>
               </div>
 
               <div className="pt-4">
-                <h3 className="text-sm font-medium text-gray-500 mb-3">Social Profiles</h3>
+                <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark mb-3">Social Profiles</h3>
                 <div className="flex gap-4">
                   <a
                     href="https://linkedin.com/in/yourprofile"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-white rounded-lg shadow-xs hover:bg-indigo-50 transition-colors"
+                    className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark rounded-lg shadow-xs hover:bg-brand-primary/10 dark:hover:bg-brand-primary/30 transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <Linkedin className="text-indigo-600" size={20} />
+                    <Linkedin className="text-brand-primary dark:text-brand-accent" size={20} />
                   </a>
                   <a
                     href="https://github.com/yourusername"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 bg-white rounded-lg shadow-xs hover:bg-indigo-50 transition-colors"
+                    className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark rounded-lg shadow-xs hover:bg-brand-primary/10 dark:hover:bg-brand-primary/30 transition-colors"
                     aria-label="GitHub"
                   >
-                    <Github className="text-indigo-600" size={20} />
+                    <Github className="text-brand-primary dark:text-brand-accent" size={20} />
                   </a>
                 </div>
               </div>
@@ -151,14 +151,14 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">Send Me a Message</h2>
+          <div className="bg-brand-surface-light dark:bg-brand-surface-dark p-8 rounded-2xl shadow-sm border border-brand-border-light dark:border-brand-border-dark">
+            <h2 className="text-2xl font-semibold text-brand-text-light dark:text-brand-text-dark mb-6">Send Me a Message</h2>
             <form 
               onSubmit={handleSubmit}
               className="space-y-6"
             >
               <div className="space-y-1">
-                <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>
+                <label htmlFor="name" className="text-sm font-medium text-brand-text-light dark:text-brand-text-dark">Name</label>
                 <input
                   id="name"
                   type="text"
@@ -167,12 +167,12 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all bg-transparent text-brand-text-light dark:text-brand-text-dark"
                 />
               </div>
 
               <div className="space-y-1">
-                <label htmlFor="email" className="text-sm font-medium text-gray-700">Email</label>
+                <label htmlFor="email" className="text-sm font-medium text-brand-text-light dark:text-brand-text-dark">Email</label>
                 <input
                   id="email"
                   type="email"
@@ -181,12 +181,12 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all bg-transparent text-brand-text-light dark:text-brand-text-dark"
                 />
               </div>
 
               <div className="space-y-1">
-                <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
+                <label htmlFor="message" className="text-sm font-medium text-brand-text-light dark:text-brand-text-dark">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -195,7 +195,7 @@ export default function Contact() {
                   onChange={handleChange}
                   rows={5}
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all resize-none bg-transparent text-brand-text-light dark:text-brand-text-dark"
                 />
               </div>
 
@@ -214,7 +214,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex justify-center items-center gap-2 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-all disabled:opacity-70"
+                className="w-full flex justify-center items-center gap-2 bg-gradient-primary text-white py-3 px-6 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all disabled:opacity-70 disabled:hover:translate-y-0"
               >
                 {isSubmitting ? (
                   <>

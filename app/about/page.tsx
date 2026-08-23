@@ -3,69 +3,96 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
+import { Palette, TrendingUp, Search, Zap } from 'lucide-react';
 
 export default function About() {
   return (
-    <>
+    <div className="relative overflow-hidden min-h-screen flex flex-col">
+      {/* Background Decorators */}
+      <div className="absolute top-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-brand-accent/10 dark:bg-brand-accent/10 blur-[120px] pointer-events-none -z-10"></div>
+      
       <Navbar />
-      <main className="max-w-5xl mx-auto px-4 py-16 space-y-16">
+      
+      <main className="flex-grow max-w-6xl mx-auto px-6 py-20 space-y-24 w-full">
         {/* Intro Section */}
-        <section className="text-center space-y-4">
-          <h1 className="text-4xl font-bold">Hey there! I&apos;m Daisy 👋</h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A passionate software developer based in Nairobi, Kenya, with a love for building impactful digital experiences.
-            From frontend finesse to backend logic — I thrive at the intersection of creativity and code.
+        <section className="text-center space-y-8 animate-fade-in-up max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">
+            Hey there! I&apos;m <span className="text-gradient">Daisy</span> 👋
+          </h1>
+          <p className="text-brand-muted-light dark:text-brand-muted-dark text-xl leading-relaxed">
+            I am a passionate <span className="font-semibold text-brand-text-light dark:text-brand-text-dark">Website Developer & Digital Marketing Expert</span> based in Nairobi, Kenya. 
+            I specialize in bridging the gap between stunning visual design and measurable business growth. 
+            From crafting intuitive user interfaces to executing data-driven marketing campaigns, I help brands thrive in the digital landscape.
           </p>
         </section>
 
         {/* Skills & Expertise */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4 text-center">💡 What I Do</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
-            <div className="bg-gray-100 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-bold mb-2">Frontend Development</h3>
-              <p>I craft intuitive and responsive UIs using Next.js, React, TypeScript, and Tailwind CSS — ensuring users not only *use* your app, but love it.</p>
+        <section className="relative">
+          <div className="absolute -left-4 -top-4 w-24 h-24 bg-brand-primary/10 dark:bg-brand-secondary/20 rounded-full blur-2xl -z-10"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">💡 My Expertise</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-brand-muted-light dark:text-brand-muted-dark">
+            <div className="glass-panel p-8 rounded-2xl hover-lift border border-brand-border-light dark:border-brand-border-dark">
+              <div className="w-12 h-12 bg-brand-primary/5 dark:bg-brand-surface-dark rounded-lg flex items-center justify-center mb-6">
+                <Palette className="text-brand-secondary dark:text-brand-accent" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-brand-text-light dark:text-brand-text-dark">Website Development</h3>
+              <p className="leading-relaxed">I craft fast, responsive, and visually stunning websites using Next.js, React, and Tailwind CSS. My focus is on creating seamless user experiences that keep visitors engaged and drive conversions.</p>
             </div>
-            <div className="bg-gray-100 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-bold mb-2">Backend Engineering</h3>
-              <p>Need a robust backend? I&apos;ve got you. I use Node.js, Express, and Django to power APIs and applications that scale and perform.</p>
+            
+            <div className="glass-panel p-8 rounded-2xl hover-lift border border-brand-border-light dark:border-brand-border-dark">
+              <div className="w-12 h-12 bg-brand-primary/5 dark:bg-brand-surface-dark rounded-lg flex items-center justify-center mb-6">
+                <TrendingUp className="text-brand-secondary dark:text-brand-accent" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-brand-text-light dark:text-brand-text-dark">Digital Marketing Strategy</h3>
+              <p className="leading-relaxed">Building a great website is just step one. I design and execute comprehensive marketing campaigns across social media, email, and content channels to amplify your brand&apos;s reach and ROI.</p>
             </div>
-            <div className="bg-gray-100 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-bold mb-2">Cloud & DevOps</h3>
-              <p>As an AWS Certified Cloud Practitioner, I design and deploy secure, scalable solutions using cloud-first strategies.</p>
+            
+            <div className="glass-panel p-8 rounded-2xl hover-lift border border-brand-border-light dark:border-brand-border-dark">
+              <div className="w-12 h-12 bg-brand-primary/5 dark:bg-brand-surface-dark rounded-lg flex items-center justify-center mb-6">
+                <Search className="text-brand-secondary dark:text-brand-accent" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-brand-text-light dark:text-brand-text-dark">SEO & Visibility</h3>
+              <p className="leading-relaxed">I implement advanced Search Engine Optimization techniques to ensure your business ranks high on Google. From keyword research to technical SEO, I make sure your target audience finds you first.</p>
             </div>
-            <div className="bg-gray-100 p-6 rounded-xl shadow">
-              <h3 className="text-xl font-bold mb-2">AI & ML Enthusiast</h3>
-              <p>I&apos;ve fine-tuned BERT for semantic search and love solving real-world problems using machine learning and natural language processing.</p>
+            
+            <div className="glass-panel p-8 rounded-2xl hover-lift border border-brand-border-light dark:border-brand-border-dark">
+              <div className="w-12 h-12 bg-brand-primary/5 dark:bg-brand-surface-dark rounded-lg flex items-center justify-center mb-6">
+                <Zap className="text-brand-secondary dark:text-brand-accent" size={24} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-brand-text-light dark:text-brand-text-dark">Conversion Rate Optimization</h3>
+              <p className="leading-relaxed">Traffic means nothing without action. I analyze user behavior, perform A/B testing, and optimize your funnels to turn casual browsers into loyal, paying customers.</p>
             </div>
           </div>
         </section>
 
         {/* Personal Vibe */}
-        <section className="text-center max-w-3xl mx-auto space-y-4">
-          <h2 className="text-2xl font-semibold">✨ A Bit More About Me</h2>
-          <p>
-            When I&apos;m not coding, you&apos;ll find me sketching UI ideas in Figma, binge-watching tech talks, or diving into a new machine learning paper.
-            I value clean code, clear communication, and constant learning.
+        <section className="text-center max-w-3xl mx-auto space-y-6 glass-panel p-10 rounded-3xl border border-brand-border-light dark:border-brand-border-dark">
+          <h2 className="text-3xl font-bold text-brand-text-light dark:text-brand-text-dark">✨ A Bit More About Me</h2>
+          <p className="text-lg text-brand-muted-light dark:text-brand-muted-dark leading-relaxed">
+            When I&apos;m not coding or analyzing marketing metrics, you&apos;ll find me exploring the latest UI/UX trends, reading up on consumer psychology, or brainstorming creative campaign ideas. 
+            I value clean design, compelling copywriting, and clear communication.
           </p>
-          <p>
-            I believe that great software is built by people who care — not just about code, but about the people using it. That&apos;s the kind of developer I strive to be.
+          <p className="text-lg text-brand-muted-light dark:text-brand-muted-dark leading-relaxed">
+            I believe that the best digital experiences are built by people who deeply understand both technology and human behavior. That&apos;s the unique blend of expertise I bring to every project.
           </p>
         </section>
 
         {/* Call to Action */}
-        <section className="text-center">
-          <h3 className="text-xl font-semibold mb-2">Let&apos;s Build Something Together 🚀</h3>
-          <p className="text-gray-600 mb-4">Whether you&apos;re looking to hire, collaborate, or just chat tech — I&apos;m all ears.</p>
+        <section className="text-center pb-10">
+          <h3 className="text-3xl font-bold mb-6 text-brand-text-light dark:text-brand-text-dark">Let&apos;s Build Something Amazing 🚀</h3>
+          <p className="text-xl text-brand-muted-light dark:text-brand-muted-dark mb-10 max-w-2xl mx-auto">
+            Ready to elevate your online presence and dominate your market? I&apos;m currently accepting new projects.
+          </p>
           <a
             href="/contact"
-            className="inline-block bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-2 bg-gradient-primary text-white px-10 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all text-lg"
           >
-            Reach Out
+            Get In Touch
           </a>
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
