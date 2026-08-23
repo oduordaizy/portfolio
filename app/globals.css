@@ -44,12 +44,28 @@
 :root {
   --background: var(--color-brand-bg-light); /* Very light slate for premium clean look */
   --foreground: var(--color-brand-text-light); /* Slate 900 */
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--color-brand-bg-dark);
     --foreground: var(--color-brand-text-dark);
+    color-scheme: dark;
+  }
+}
+
+@media (forced-colors: active) {
+  :root {
+    --color-brand-primary: CanvasText;
+    --color-brand-secondary: CanvasText;
+    --color-brand-accent: LinkText;
+    --color-brand-bg-light: Canvas;
+    --color-brand-bg-dark: Canvas;
+    --color-brand-surface-light: Canvas;
+    --color-brand-surface-dark: Canvas;
+    --color-brand-text-light: CanvasText;
+    --color-brand-text-dark: CanvasText;
   }
 }
 
@@ -58,6 +74,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  color-rendering: optimizeQuality;
+  image-rendering: optimizeQuality;
+  color-interpolation: sRGB;
 }
 
 .pacifico-regular {

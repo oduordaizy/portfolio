@@ -79,54 +79,54 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <main className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-brand-text-light dark:text-brand-text-dark mb-4">Let&apos;s Connect</h1>
-          <p className="text-xl text-brand-muted-light dark:text-brand-muted-dark max-w-2xl mx-auto">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div className="text-center mb-12 sm:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-text-light dark:text-brand-text-dark mb-4">Let&apos;s Connect</h1>
+          <p className="text-base sm:text-lg md:text-xl text-brand-muted-light dark:text-brand-muted-dark max-w-2xl mx-auto">
             Have a project in mind or want to discuss opportunities? Drop me a message below.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
           {/* Contact Information */}
-          <div className="bg-gradient-to-br from-brand-primary/5 to-brand-secondary/10 dark:from-brand-surface-dark dark:to-brand-bg-dark p-8 rounded-2xl shadow-sm border border-brand-border-light dark:border-brand-border-dark">
-            <h2 className="text-2xl font-semibold text-brand-text-light dark:text-brand-text-dark mb-6">Contact Information</h2>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
+          <div className="bg-gradient-to-br from-brand-primary/5 to-brand-secondary/10 dark:from-brand-surface-dark dark:to-brand-bg-dark p-6 sm:p-8 rounded-2xl shadow-sm border border-brand-border-light dark:border-brand-border-dark">
+            <h2 className="text-xl sm:text-2xl font-semibold text-brand-text-light dark:text-brand-text-dark mb-4 sm:mb-6">Contact Information</h2>
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <div className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark rounded-lg shadow-xs border border-brand-border-light dark:border-brand-border-dark">
-                  <Mail className="text-brand-primary dark:text-brand-accent" size={20} />
+                  <Mail className="text-brand-primary dark:text-brand-accent w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark">Email</h3>
-                  <a href="mailto:oduordaizy@gmail.com" className="text-lg text-brand-text-light dark:text-brand-text-dark hover:text-brand-accent dark:hover:text-brand-accent transition-colors">
+                  <a href="mailto:oduordaizy@gmail.com" className="text-base sm:text-lg text-brand-text-light dark:text-brand-text-dark hover:text-brand-accent dark:hover:text-brand-accent transition-colors">
                     oduordaizy@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <div className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark rounded-lg shadow-xs border border-brand-border-light dark:border-brand-border-dark">
-                  <Phone className="text-brand-primary dark:text-brand-accent" size={20} />
+                  <Phone className="text-brand-primary dark:text-brand-accent w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark">Phone</h3>
-                  <span className="text-lg text-brand-text-light dark:text-brand-text-dark">+254 797967839</span>
+                  <span className="text-base sm:text-lg text-brand-text-light dark:text-brand-text-dark">+254 797967839</span>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <div className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark rounded-lg shadow-xs border border-brand-border-light dark:border-brand-border-dark">
-                  <MapPin className="text-brand-primary dark:text-brand-accent" size={20} />
+                  <MapPin className="text-brand-primary dark:text-brand-accent w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark">Location</h3>
-                  <span className="text-lg text-brand-text-light dark:text-brand-text-dark">Nairobi, Kenya</span>
+                  <span className="text-base sm:text-lg text-brand-text-light dark:text-brand-text-dark">Nairobi, Kenya</span>
                 </div>
               </div>
 
               <div className="pt-4">
                 <h3 className="text-sm font-medium text-brand-muted-light dark:text-brand-muted-dark mb-3">Social Profiles</h3>
-                <div className="flex gap-4">
+                <div className="flex gap-3 sm:gap-4">
                   <a
                     href="https://linkedin.com/in/yourprofile"
                     target="_blank"
@@ -134,7 +134,7 @@ export default function Contact() {
                     className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark rounded-lg shadow-xs hover:bg-brand-primary/10 dark:hover:bg-brand-primary/30 transition-colors"
                     aria-label="LinkedIn"
                   >
-                    <Linkedin className="text-brand-primary dark:text-brand-accent" size={20} />
+                    <Linkedin className="text-brand-primary dark:text-brand-accent w-5 h-5" />
                   </a>
                   <a
                     href="https://github.com/yourusername"
@@ -143,7 +143,7 @@ export default function Contact() {
                     className="p-2 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark rounded-lg shadow-xs hover:bg-brand-primary/10 dark:hover:bg-brand-primary/30 transition-colors"
                     aria-label="GitHub"
                   >
-                    <Github className="text-brand-primary dark:text-brand-accent" size={20} />
+                    <Github className="text-brand-primary dark:text-brand-accent w-5 h-5" />
                   </a>
                 </div>
               </div>
@@ -151,11 +151,11 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-brand-surface-light dark:bg-brand-surface-dark p-8 rounded-2xl shadow-sm border border-brand-border-light dark:border-brand-border-dark">
-            <h2 className="text-2xl font-semibold text-brand-text-light dark:text-brand-text-dark mb-6">Send Me a Message</h2>
+          <div className="bg-brand-surface-light dark:bg-brand-surface-dark p-6 sm:p-8 rounded-2xl shadow-sm border border-brand-border-light dark:border-brand-border-dark">
+            <h2 className="text-xl sm:text-2xl font-semibold text-brand-text-light dark:text-brand-text-dark mb-4 sm:mb-6">Send Me a Message</h2>
             <form 
               onSubmit={handleSubmit}
-              className="space-y-6"
+              className="space-y-4 sm:space-y-6"
             >
               <div className="space-y-1">
                 <label htmlFor="name" className="text-sm font-medium text-brand-text-light dark:text-brand-text-dark">Name</label>
@@ -167,7 +167,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all bg-transparent text-brand-text-light dark:text-brand-text-dark"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all bg-transparent text-brand-text-light dark:text-brand-text-dark text-base"
                 />
               </div>
 
@@ -181,7 +181,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all bg-transparent text-brand-text-light dark:text-brand-text-dark"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all bg-transparent text-brand-text-light dark:text-brand-text-dark text-base"
                 />
               </div>
 
@@ -195,14 +195,14 @@ export default function Contact() {
                   onChange={handleChange}
                   rows={5}
                   required
-                  className="w-full px-4 py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all resize-none bg-transparent text-brand-text-light dark:text-brand-text-dark"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-brand-border-light dark:border-brand-border-dark rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent transition-all resize-none bg-transparent text-brand-text-light dark:text-brand-text-dark text-base"
                 />
               </div>
 
               <input type="text" name="_gotcha" className="hidden" />
 
               {submitStatus.message && (
-                <div className={`p-4 rounded-lg ${submitStatus.success ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
+                <div className={`p-3 sm:p-4 rounded-lg ${submitStatus.success ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
                   {submitStatus.success ? (
                     <p>Message sent successfully! I&apos;ll get back to you soon.</p>
                   ) : (
@@ -214,16 +214,16 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex justify-center items-center gap-2 bg-gradient-primary text-white py-3 px-6 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all disabled:opacity-70 disabled:hover:translate-y-0"
+                className="w-full flex justify-center items-center gap-2 bg-gradient-primary text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg font-bold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all disabled:opacity-70 disabled:hover:translate-y-0 text-base sm:text-lg"
               >
                 {isSubmitting ? (
                   <>
-                    <Loader2 className="animate-spin" size={18} />
+                    <Loader2 className="animate-spin w-4 h-4 sm:w-5 sm:h-5" />
                     Sending...
                   </>
                 ) : (
                   <>
-                    <Mail className="mr-1" size={18} />
+                    <Mail className="mr-1 w-4 h-4 sm:w-5 sm:h-5" />
                     Send Message
                   </>
                 )}

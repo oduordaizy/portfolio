@@ -97,28 +97,28 @@ export default function Projects() {
 
             <Navbar />
 
-            <main className="flex-grow max-w-7xl mx-auto px-6 py-20 w-full">
+            <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20 w-full">
                 {/* Header Section */}
-                <div className="text-center mb-16 animate-fade-in-up">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-accent/10 dark:bg-brand-accent/20 text-brand-accent font-medium mb-4">
-                        <Sparkles size={18} />
-                        <span>Portfolio</span>
+                <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+                    <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-brand-accent/10 dark:bg-brand-accent/20 text-brand-accent font-medium mb-4">
+                        <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
+                        <span className="text-sm sm:text-base">Portfolio</span>
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-brand-text-light dark:text-brand-text-dark mb-6">
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-brand-text-light dark:text-brand-text-dark mb-4 sm:mb-6">
                         Featured <span className="text-gradient">Projects</span>
                     </h1>
-                    <p className="text-xl text-brand-muted-light dark:text-brand-muted-dark max-w-2xl mx-auto">
+                    <p className="text-base sm:text-lg md:text-xl text-brand-muted-light dark:text-brand-muted-dark max-w-2xl mx-auto">
                         A curated showcase of digital experiences crafted for diverse industries across Kenya and beyond.
                     </p>
                 </div>
 
                 {/* Category Filter */}
-                <div className="flex flex-wrap justify-center gap-3 mb-12">
+                <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
                     {categories.map((category) => (
                         <button
                             key={category}
                             onClick={() => setSelectedCategory(category)}
-                            className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === category
+                            className={`px-3 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-medium transition-all ${selectedCategory === category
                                     ? 'bg-brand-primary text-white shadow-md'
                                     : 'bg-brand-surface-light dark:bg-brand-surface-dark text-brand-muted-light dark:text-brand-muted-dark hover:bg-brand-primary/10 dark:hover:bg-brand-primary/30 border border-brand-border-light dark:border-brand-border-dark'
                                 }`}
@@ -129,7 +129,7 @@ export default function Projects() {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
                     {filteredProjects.map((project, index) => (
                         <div key={index} className="group relative flex flex-col glass-panel rounded-3xl overflow-hidden hover-lift border border-brand-border-light dark:border-brand-border-dark">
 
@@ -194,16 +194,16 @@ export default function Projects() {
                             </div>
 
                             {/* Project Info */}
-                            <div className="p-8 flex flex-col flex-grow">
+                            <div className="p-4 sm:p-6 md:p-8 flex flex-col flex-grow">
                                 <div className="flex items-start justify-between gap-2 mb-3">
                                     <div className="flex-1">
                                         <div className="flex items-center gap-2 mb-2">
-                                            <h2 className="text-2xl font-bold text-brand-text-light dark:text-brand-text-dark group-hover:text-brand-primary dark:group-hover:text-brand-accent transition-colors">
+                                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-brand-text-light dark:text-brand-text-dark group-hover:text-brand-primary dark:group-hover:text-brand-accent transition-colors">
                                                 {project.title}
                                             </h2>
                                             {project.featured && <Star className="w-4 h-4 text-brand-accent fill-brand-accent" />}
                                         </div>
-                                        <span className="px-3 py-1 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark text-brand-text-light dark:text-brand-text-dark text-xs font-bold rounded-full shadow-sm">
+                                        <span className="px-2 sm:px-3 py-1 bg-brand-surface-light dark:bg-brand-surface-dark border border-brand-border-light dark:border-brand-border-dark text-brand-text-light dark:text-brand-text-dark text-xs font-bold rounded-full shadow-sm">
                                             {project.category}
                                         </span>
                                     </div>
@@ -213,14 +213,14 @@ export default function Projects() {
                                     </div>
                                 </div>
 
-                                <p className="text-brand-muted-light dark:text-brand-muted-dark mb-6 text-sm leading-relaxed flex-grow">
+                                <p className="text-brand-muted-light dark:text-brand-muted-dark mb-4 sm:mb-6 text-xs sm:text-sm leading-relaxed flex-grow">
                                     {project.description}
                                 </p>
 
                                 {/* Tech Stack */}
-                                <div className="flex flex-wrap gap-2 mb-6">
+                                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                                     {project.tech.map((techItem, techIndex) => (
-                                        <span key={techIndex} className="text-xs font-medium px-2.5 py-1 bg-brand-primary/10 dark:bg-brand-primary/20 text-brand-primary dark:text-brand-text-dark rounded-md">
+                                        <span key={techIndex} className="text-xs font-medium px-2 sm:px-2.5 py-1 bg-brand-primary/10 dark:bg-brand-primary/20 text-brand-primary dark:text-brand-text-dark rounded-md">
                                             {techItem}
                                         </span>
                                     ))}
@@ -232,9 +232,9 @@ export default function Projects() {
                                     href={project.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full flex items-center justify-center gap-2 bg-gradient-primary text-white px-4 py-3 rounded-xl transition-all hover:shadow-lg hover:-translate-y-1 font-bold"
+                                    className="w-full flex items-center justify-center gap-2 bg-gradient-primary text-white px-3 sm:px-4 py-2 sm:py-3 rounded-xl transition-all hover:shadow-lg hover:-translate-y-1 font-bold text-sm sm:text-base"
                                 >
-                                    View Live <ExternalLink size={18} />
+                                    View Live <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                                 </a>
                             </div>
                         </div>
