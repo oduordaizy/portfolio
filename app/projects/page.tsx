@@ -7,62 +7,62 @@ import { ExternalLink, Award, Eye, ChevronDown, ChevronUp, Calendar, Star, Spark
 import Image from 'next/image';
 
 const projectsData = [
-  {
-    title: "iTravas",
-    description: "A modern ridesharing platform connecting drivers with empty seats to passengers seeking affordable, secure, and convenient travel across Kenya. Features real-time tracking, secure payments, and driver verification.",
-    category: "Web Development",
-    imageUrl: "/projects/itravas.jpg",
-    gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
-    tech: ["React", "Django", "PostgreSQL"],
-    stats: { views: "8.5K", conversion: "4.1%" },
-    url: "https://itravas.com",
-    featured: true,
-    year: "2024",
-  },
-  {
-    title: "Avoworld Africa Website",
-    description: "A comprehensive website for Avocado logistics and transportation company. Includes fleet management, real-time shipment tracking, and customer portal for booking and monitoring deliveries.",
-    category: "Logistics",
-    imageUrl: "/projects/avoworld.jpg",
-    gradient: "bg-gradient-to-b from-emerald-500 via-teal-600 to-cyan-700",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    stats: { views: "12K", conversion: "6.2%" },
-    url: "https://avoworldafrica.co.ke/",
-    year: "2024",
-  },
-  {
-    title: "Afritox Mobile Lab",
-    description: "A mobile laboratory platform for medical testing in Kenya. Enables patients to book mobile lab services, view test results securely, and track sample collection in real-time.",
-    category: "Healthcare",
-    imageUrl: "/projects/afritox.png",
-    gradient: "bg-gradient-to-b from-rose-500 via-pink-600 to-purple-700",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    stats: { views: "5.2K", conversion: "8.3%" },
-    url: "http://187.127.229.137:3005",
-    year: "2026",
-  },
-  {
-    title: "Elite Africa Football Academy",
-    description: "An informational website for a modern football academy that includes a blog for news and updates.",
-    category: "Web Development",
-    imageUrl: "/projects/eafa.jpg",
-    gradient: "bg-gradient-to-b from-amber-500 via-orange-600 to-red-700",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
-    stats: { views: "15K", conversion: "7.8%" },
-    url: "https://eliteafricafa.com",
-    year: "2026",
-  },
-  {
-    title: "Lintech Web Solutions",
-    description: "Corporate website for a professional web solutions and IT services provider, showcasing services, portfolio, and company profile.",
-    category: "Corporate",
-    imageUrl: "/projects/lintech.jpg",
-    gradient: "bg-gradient-to-b from-brand-primary via-brand-secondary to-brand-accent",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    stats: { views: "6K", conversion: "5.5%" },
-    url: "https://lintechwebsolutions.co.ke",
-    year: "2026",
-  }
+    {
+        title: "iTravas",
+        description: "A modern ridesharing platform connecting drivers with empty seats to passengers seeking affordable, secure, and convenient travel across Kenya. Features real-time tracking, secure payments, and driver verification.",
+        category: "Web Development",
+        imageUrl: "/projects/itravas.jpg",
+        gradient: "bg-gradient-to-b from-indigo-500 via-blue-600 to-cyan-700",
+        tech: ["React", "Django", "PostgreSQL"],
+        stats: { views: "8.5K", conversion: "4.1%" },
+        url: "https://itravas.com",
+        featured: true,
+        year: "2024",
+    },
+    {
+        title: "Avoworld Africa Website",
+        description: "A comprehensive website for Avocado logistics and transportation company. Includes fleet management, real-time shipment tracking, and customer portal for booking and monitoring deliveries.",
+        category: "Logistics",
+        imageUrl: "/projects/avoworld.jpg",
+        gradient: "bg-gradient-to-b from-emerald-500 via-teal-600 to-cyan-700",
+        tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+        stats: { views: "12K", conversion: "6.2%" },
+        url: "https://avoworldafrica.co.ke/",
+        year: "2024",
+    },
+    {
+        title: "Afritox Mobile Lab",
+        description: "A mobile laboratory platform for medical testing in Kenya. Enables patients to book mobile lab services, view test results securely, and track sample collection in real-time.",
+        category: "Healthcare",
+        imageUrl: "/projects/afritox.png",
+        gradient: "bg-gradient-to-b from-rose-500 via-pink-600 to-purple-700",
+        tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+        stats: { views: "5.2K", conversion: "8.3%" },
+        url: "http://187.127.229.137:3005",
+        year: "2026",
+    },
+    {
+        title: "Elite Africa Football Academy",
+        description: "An informational website for a modern football academy that includes a blog for news and updates.",
+        category: "Web Development",
+        imageUrl: "/projects/eafa.jpg",
+        gradient: "bg-gradient-to-b from-amber-500 via-orange-600 to-red-700",
+        tech: ["Next.js", "TypeScript", "Tailwind CSS", ".NET Core"],
+        stats: { views: "15K", conversion: "7.8%" },
+        url: "https://eliteafricafa.com",
+        year: "2026",
+    },
+    {
+        title: "Lintech Web Solutions",
+        description: "Corporate website for a professional web solutions and IT services provider, showcasing services, portfolio, and company profile.",
+        category: "Corporate",
+        imageUrl: "/projects/lintech.png",
+        gradient: "bg-gradient-to-b from-brand-primary via-brand-secondary to-brand-accent",
+        tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+        stats: { views: "6K", conversion: "5.5%" },
+        url: "https://lintechwebsolutions.co.ke",
+        year: "2026",
+    }
 ];
 
 const categories = ["All", "Web Development", "Logistics", "Healthcare", "Corporate"];
@@ -71,8 +71,8 @@ export default function Projects() {
     const scrollRefs = useRef<(HTMLDivElement | null)[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
-    const filteredProjects = selectedCategory === "All" 
-        ? projectsData 
+    const filteredProjects = selectedCategory === "All"
+        ? projectsData
         : projectsData.filter(project => project.category === selectedCategory);
 
     const handleScroll = (index: number, direction: 'up' | 'down') => {
@@ -94,7 +94,7 @@ export default function Projects() {
         <div className="min-h-screen flex flex-col relative overflow-hidden">
             {/* Background Decorators */}
             <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-brand-primary/10 dark:bg-brand-primary/20 blur-[100px] pointer-events-none -z-10"></div>
-            
+
             <Navbar />
 
             <main className="flex-grow max-w-7xl mx-auto px-6 py-20 w-full">
@@ -118,11 +118,10 @@ export default function Projects() {
                         <button
                             key={category}
                             onClick={() => setSelectedCategory(category)}
-                            className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                                selectedCategory === category 
-                                ? 'bg-brand-primary text-white shadow-md' 
-                                : 'bg-brand-surface-light dark:bg-brand-surface-dark text-brand-muted-light dark:text-brand-muted-dark hover:bg-brand-primary/10 dark:hover:bg-brand-primary/30 border border-brand-border-light dark:border-brand-border-dark'
-                            }`}
+                            className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${selectedCategory === category
+                                    ? 'bg-brand-primary text-white shadow-md'
+                                    : 'bg-brand-surface-light dark:bg-brand-surface-dark text-brand-muted-light dark:text-brand-muted-dark hover:bg-brand-primary/10 dark:hover:bg-brand-primary/30 border border-brand-border-light dark:border-brand-border-dark'
+                                }`}
                         >
                             {category}
                         </button>
@@ -133,7 +132,7 @@ export default function Projects() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {filteredProjects.map((project, index) => (
                         <div key={index} className="group relative flex flex-col glass-panel rounded-3xl overflow-hidden hover-lift border border-brand-border-light dark:border-brand-border-dark">
-                            
+
                             {/* Browser-style Scrollable Image Area */}
                             <div className="relative aspect-[16/10] bg-brand-surface-light dark:bg-brand-surface-dark border-b border-brand-border-light dark:border-brand-border-dark overflow-hidden">
                                 {/* Browser Toolbar */}
@@ -161,8 +160,8 @@ export default function Projects() {
                                     `}</style>
 
                                     <div className="relative w-full min-h-full">
-                                        <img 
-                                            src={project.imageUrl} 
+                                        <img
+                                            src={project.imageUrl}
                                             alt={project.title}
                                             className="w-full h-auto object-top block"
                                             onError={(e) => {
@@ -213,11 +212,11 @@ export default function Projects() {
                                         {project.year}
                                     </div>
                                 </div>
-                                
+
                                 <p className="text-brand-muted-light dark:text-brand-muted-dark mb-6 text-sm leading-relaxed flex-grow">
                                     {project.description}
                                 </p>
-                                
+
                                 {/* Tech Stack */}
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tech.map((techItem, techIndex) => (
@@ -239,9 +238,9 @@ export default function Projects() {
                                     </div>
                                 </div>
 
-                                <a 
-                                    href={project.url} 
-                                    target="_blank" 
+                                <a
+                                    href={project.url}
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-full flex items-center justify-center gap-2 bg-gradient-primary text-white px-4 py-3 rounded-xl transition-all hover:shadow-lg hover:-translate-y-1 font-bold"
                                 >
