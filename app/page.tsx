@@ -49,7 +49,7 @@ export default function Main() {
           <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-secondary to-brand-accent rounded-full opacity-20 blur-2xl animate-pulse"></div>
             <Image
-              src="/daisy-img.png"
+              src="/daisy.png"
               fill
               priority
               alt="Daisy Oduor"
